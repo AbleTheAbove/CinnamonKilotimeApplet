@@ -1,1 +1,1 @@
-cp -ri kilotime@ablecorp.us ~/.local/share/cinnamon/applets/
+cp -r kilotime@ablecorp.us ~/.local/share/cinnamon/applets/
