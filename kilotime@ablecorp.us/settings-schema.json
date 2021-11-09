@@ -1,12 +1,22 @@
 {
-    "section1": {
-        "type": "section",
-        "description": "Display"
-    },
-    "use-decimal-point" : {
-        "type" : "switch",
-        "default" : false,
-        "description": "Show seconds separated by decimal point",
-        "tooltip": "Enable this to show seconds separated by a decimal point."
-    }
+   "section1": {
+      "type": "section",
+      "description": "Display"
+   },
+   "use-decimal-point": {
+      "type": "switch",
+      "default": false,
+      "description": "Show seconds separated by decimal point",
+      "tooltip": "Enable this to show seconds separated by a decimal point."
+   },
+   "clock-precision": {
+      "type": "spinbutton",
+      "default": 3,
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "unit": "digits",
+      "description": "Amount of digits after the decimal point.",
+      "tooltip": "Change this to set the number of digits after the decimal point."
+   }
 }
