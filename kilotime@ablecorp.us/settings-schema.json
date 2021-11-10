@@ -3,10 +3,17 @@
       "type": "section",
       "description": "Display"
    },
+   "use-unix-time": {
+      "type": "switch",
+      "default": false,
+      "description": "Use UNIX time instead of day-offset time.",
+      "tooltip": "Enable this to show seconds since the UNIX epoch."
+   },
    "use-decimal-point": {
       "type": "switch",
       "default": false,
       "description": "Show seconds separated by decimal point",
+      "dependency": "!use-unix-time",
       "tooltip": "Enable this to show seconds separated by a decimal point."
    },
    "clock-precision": {
@@ -17,6 +24,7 @@
       "step": 1,
       "unit": "digits",
       "description": "Amount of digits after the decimal point.",
+      "dependency": "!use-unix-time",
       "tooltip": "Change this to set the number of digits after the decimal point."
    }
 }
